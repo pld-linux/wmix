@@ -13,7 +13,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 WMix is a very nice mixer for WindowMaker Dock. It uses ALSA sound
