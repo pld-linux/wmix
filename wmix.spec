@@ -14,6 +14,7 @@ BuildRequires:	alsa-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define 	_prefix		/usr/X11R6
+%define		_applnkdir	%{_datadir}/applnk
 
 %description
 WMix is a very nice mixer for WindowMaker Dock.
@@ -32,9 +33,11 @@ make -C %{name} \
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},/usr/X11R6/share/applnk/DockApplets} 
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
+
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets 
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+
 gzip -9nf README CHANGES
 
 %clean
@@ -45,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc {CHANGES,README}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-/usr/X11R6/share/applnk/DockApplets/wmix.desktop
+%{_applnkdir}/DockApplets/wmix.desktop
