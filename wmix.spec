@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/%{name}er-%{version}.tar.gz
+# Source0-md5:	4a5377f2cc43913d59610481778b0c3f
 Source1:	%{name}.desktop
 #URL:		http://www.ne.jp/asahi/linux/timecop/#wmix
 URL:		http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/mmedia.html#wmmixer
