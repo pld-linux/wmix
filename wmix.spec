@@ -9,6 +9,7 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/%{name}er-%{version}.tar.gz
 Source1:	%{name}.desktop
+#URL:		http://www.ne.jp/asahi/linux/timecop/#wmix
 URL:		http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/mmedia.html#wmmixer
 BuildRequires:	XFree86-devel
 BuildRequires:	alsa-devel
