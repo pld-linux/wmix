@@ -12,7 +12,7 @@ Source1:	%{name}.desktop
 #URL:		http://www.ne.jp/asahi/linux/timecop/#wmix
 URL:		http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/mmedia.html#wmmixer
 BuildRequires:	XFree86-devel
-BuildRequires:	alsa-devel
+BuildRequires:	alsa-lib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README CHANGES
 
@@ -49,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-%{_applnkdir}/DockApplets/wmix.desktop
+#%{_applnkdir}/DockApplets/wmix.desktop
