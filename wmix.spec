@@ -14,7 +14,7 @@ BuildRequires:	alsa-lib-devel
 BuildRequires:	alsa-driver-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
-%define _prefix	/usr/X11R6
+%define 	_prefix		/usr/X11R6
 
 %description
 WMix is a very nice mixer for WindowMaker Dock.
