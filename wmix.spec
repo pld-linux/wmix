@@ -2,7 +2,7 @@ Summary:	WMix - Yet another Window Maker Mixer Applet
 Summary(pl):	WMix - jeszcze jeden mikser dla WindowMakera
 Name:		wmix
 Version:	3.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.ne.jp/asahi/linux/timecop/software/%{name}-%{version}.tar.gz
@@ -27,7 +27,8 @@ WindowMakera i korzystaj±cym ze sterowników ALSA lub OSS.
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags} -I%{_includedir}"
+	CFLAGS="%{rpmcflags} -I%{_includedir}" \
+	LDFLAGS="-L/usr/X11R6/%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
