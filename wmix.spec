@@ -2,11 +2,12 @@ Summary:	WMix - Yet another Window Maker Mixer Applet
 Summary(pl):	WMix - jeszcze jeden mikser dla WindowMakera
 Name:		wmix
 Version: 	1.5
-Release:	1
+Release:	2
 Copyright:	GPL
 Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Source:		http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/wmixer-%{version}.tar.gz
+Source0:	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/wmixer-%{version}.tar.gz
+Source1:	wmix.desktop
 BuildPrereq:	XFree86-devel
 BuildPrereq:	xpm-devel
 BuildPrereq:	alsa-lib-devel
@@ -32,9 +33,9 @@ make -C %{name} \
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir} 
+install -d $RPM_BUILD_ROOT{%{_bindir},/etc/X11/applnk/DockApplets} 
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets 
 gzip -9nf README CHANGES
 
 %clean
@@ -44,6 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {CHANGES,README}.gz
 %attr(755,root,root) %{_bindir}/%{name}
+
+/etc/X11/applnk/DockApplets/wmix.desktop
 
 %changelog
 * Tue May 25 1999 Piotr Czerwiñski <pius@pld.org.pl> 
