@@ -1,12 +1,13 @@
 Summary:	WMix - Yet another Window Maker Mixer Applet
 Summary(pl):	WMix - jeszcze jeden mikser dla WindowMakera
 Name:		wmix
-Version:	3.1
-Release:	2
+Version:	3.2
+Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://www.ne.jp/asahi/linux/timecop/software/%{name}-%{version}.tar.gz
-# Source0-md5:	62f6e86f7558f193e081dc29444a6699
+Source0:	http://www.dockapps.org/download.php/id/528/%{name}-%{version}.tar.gz
+# Source0-md5:	ce87c48cadf51b3cd6224ef698d3f2cc
+# Source0-size:	23352
 Source1:	%{name}.desktop
 URL:		http://www.ne.jp/asahi/linux/timecop/#wmix
 BuildRequires:	XFree86-devel
