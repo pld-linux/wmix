@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGES
 %attr(755,root,root) %{_bindir}/%{name}
 
-#%{_applnkdir}/DockApplets/wmix.desktop
+#%%{_applnkdir}/DockApplets/wmix.desktop
