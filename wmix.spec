@@ -10,8 +10,7 @@ Source0:	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/wmixer-%{version}.tar.gz
 Source1:	wmix.desktop
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRequires:	alsa-lib-devel
-BuildRequires:	alsa-driver-devel
+BuildRequires:	alsa-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define 	_prefix		/usr/X11R6
