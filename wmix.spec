@@ -27,7 +27,7 @@ dla Doku WindowMakera i korzystaj±cym ze sterowników ALSA.
 %setup -q -n wm
 
 %build
-make -C %{name} \
+%{__make} -C %{name} \
 	FLAGS="$RPM_OPT_FLAGS -I/usr/X11R6/include"
 
 %install
