@@ -9,6 +9,7 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/%{name}er-%{version}.tar.gz
 Source1:	%{name}.desktop
+URL:		http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/mmedia.html#wmmixer
 BuildRequires:	XFree86-devel
 BuildRequires:	alsa-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {CHANGES,README}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
 %{_applnkdir}/DockApplets/wmix.desktop
