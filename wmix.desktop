@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WMix
+Comment=Sound Mixer
+Comment[pl]=Mikser d¼wiêku
+Exec=wmix
+Terminal=0
+Type=Application
