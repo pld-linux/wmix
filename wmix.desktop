@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=WMix
 Comment=Sound Mixer
-Comment[pl]=Mikser d¼wiêku
+Comment[pl]=Mikser dÅºwiÄ™ku
 Exec=wmix
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
