@@ -47,8 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 
 /etc/X11/applnk/DockApplets/wmix.desktop
-
-%changelog
-* Tue May 25 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [1.5-1]
-- initial RPM release.
