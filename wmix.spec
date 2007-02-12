@@ -1,5 +1,5 @@
 Summary:	WMix - Yet another Window Maker Mixer Applet
-Summary(pl.UTF-8):   WMix - jeszcze jeden mikser dla WindowMakera
+Summary(pl.UTF-8):	WMix - jeszcze jeden mikser dla WindowMakera
 Name:		wmix
 Version:	3.2
 Release:	1
