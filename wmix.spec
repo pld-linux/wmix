@@ -1,5 +1,5 @@
 Summary:	WMix - Yet another Window Maker Mixer Applet
-Summary(pl):	WMix - jeszcze jeden mikser dla WindowMakera
+Summary(pl.UTF-8):   WMix - jeszcze jeden mikser dla WindowMakera
 Name:		wmix
 Version:	3.2
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 WMix is a very nice mixer for WindowMaker Dock. It uses ALSA or OSS
 sound drivers.
 
-%description -l pl
+%description -l pl.UTF-8
 WMix jest bardzo przyjemnym mikserem, zaprojektowanym dla Doku
-WindowMakera i korzystaj±cym ze sterowników ALSA lub OSS.
+WindowMakera i korzystajÄ…cym ze sterownikÃ³w ALSA lub OSS.
 
 %prep
 %setup -q
